@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+
+	"name": "Twitter block",
+	"version": "1.0",
+	"description": "Add a button to block a user with a single click",
+
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://twitter.com/*"],
+			"js": ["third_party/jquery-2.1.1.min.js", "tb-background.js"]
+		}
+	]
+}
